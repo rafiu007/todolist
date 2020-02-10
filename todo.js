@@ -46,11 +46,11 @@ var i;
 
 for(i=0;i<close.length;i++){
     close[i].onclick=function(){
-        var div=thi.parentElement;
+        var div=this.parentElement;
         div.style.display="none";
     }
 }
-
+//for marking an item as done...unclear as of now
 var list =document.querySelector('ul');
 list.addEventListener('click',function(ev){
     if(ev.target.tagName==="LI"){
